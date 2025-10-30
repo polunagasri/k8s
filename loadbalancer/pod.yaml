@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myown-pod
+  labels:
+    app: dummypod
+spec:
+  containers:
+    - name: neon-pulse-container
+      image: ec2/neon-pulse-dashboard
+      ports:
+        - containerPort: 80
+          protocol: TCP
+
+
+              
