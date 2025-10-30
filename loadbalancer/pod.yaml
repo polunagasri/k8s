@@ -6,7 +6,7 @@ metadata:
     app: dummypod
 spec:
   containers:
-    - name: Neon-Pulse-container
+    - name:  my-container
       image: nginx:1.29
       ports:
         - containerPort: 80
