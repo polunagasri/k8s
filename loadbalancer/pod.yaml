@@ -6,8 +6,8 @@ metadata:
     app: dummypod
 spec:
   containers:
-    - name: neon-pulse-container
-      image: ec2/neon-pulse-dashboard
+    - name: Neon-Pulse-container
+      image: EC2-Neon-Pulse_Dashboard
       ports:
         - containerPort: 80
           protocol: TCP
