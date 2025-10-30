@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: loadbalancer-svc
 spec:
-  type: LoadBalancer
   selector:
     app: dummypod
+  type: LoadBalancer
   ports:
-    - port: 80          # Service port
-      LoadBalancer: 80    # Container port  
+    - port: 80        
+      targetPort: 80  
+      protocol: TCP
+ 
